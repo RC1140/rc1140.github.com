@@ -3,9 +3,6 @@ layout: post
 title: Must installs for django 
 ---
 
-{{ page.title }}
-================
-
 I have recently started using django alot more and must say that I am
 really enjoying it. As such I thought I should share some info that I
 have come across while learning the basics.
@@ -15,7 +12,9 @@ South plugin. Doing this is pretty simple (all examples are for
 ubuntu).
 
 Simply run the following command :
+	{% highlight bash %}
 	sudo easy_install South
+	{% endhighlight %}
 
 Next edit your settings.py and add 'South' to your installed apps list.
 
