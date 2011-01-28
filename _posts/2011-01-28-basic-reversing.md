@@ -68,3 +68,8 @@ the source code for the application that you are working on.
 
 Again if you find any issues please catch me in #zacon on atrum
 or on twitter(@RC1140).
+
+Update : @z0nbi has posted a [follow up to this article](http://www.zonbi.org/2011/01/28/basic-application-reversing-a-companion/) , if you feel 
+that you are still new to RE please vist this site to get extra
+information that will clear up quite a few things (also he has pretty 
+pictures)
