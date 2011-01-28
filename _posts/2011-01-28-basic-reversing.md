@@ -14,7 +14,7 @@ you are doing the 0×41414141.com challenges on your own
 then first give them a try yourself before getting the answer
 here.
 
-A spoiler of the first challenge can be found <a href="http://www.zonbi.org/?p=310" >here(thanks z0nbi)</a>
+A spoiler of the first challenge can be found <a href="http://www.zonbi.org/?p=310" >here</a> (thanks z0nbi)
 if you havent already completed it. Its a interesting challenge 
 and what got me started on this whole thing.
 
