@@ -23,14 +23,14 @@ completing the first part of the challenge (the spoiler is above).
 Next grab the free version of <a href="http://www.ollydbg.de/odbg110.zip">OllDbg</a> 
 from the site.
 
-At this point in a bigger project I would normally check the 
-the exe for string resources. But since the app is a whole 2Kb
-I am going to jump straight into debugging the app.
+At this point in a bigger project I would normally check the exe 
+for string resources. But since the app is a whole 2Kb I am going 
+to jump straight into debugging the app.
 
 Start of by launching Olly, next load up the exe (File -> Open).
 Lets get into this ,hit F9 or Debug -> Run. This will start the
 app in debug mode and pause the at the first piece of code that 
-will be executed. If you have some C experiance this is your 
+will be executed. If you have some C experience this is your 
 main() function, i.e. the entry point for the application.
 
 I am not going to be explaining every single asm function and
@@ -61,7 +61,7 @@ The alternate option is to add a breakpoint at 00401035 (click on
 the line and hit F2) then hit F9 to run to the code. You can at this
 point re examine the register and get the value from the function.
 
-As you may have guess the email address for the challenge is 0x0007AB00@[the rest .com]
+As you may have guess the email address for the challenge is 0x0007AB00@therest.com
 Replace the rest .com with the address from the first challenge.
 You will know you got the right address if you get a reply with
 the source code for the application that you are working on.
