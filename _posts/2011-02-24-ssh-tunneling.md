@@ -103,7 +103,7 @@ ssh rc1140@remoteserver -L 5900:localhost:5900
 
 Now instead of connecting to the remote server directly you would instead
 connect to the localhost (make sure you don't already have a local vnc server running).
-This will ensure that all your communication of vnc is secure.
+This will ensure that all your communication over vnc is secure.
 
 I tried to cover all the important base's with ssh tunnels but please do let me know
 if I have missed anything
