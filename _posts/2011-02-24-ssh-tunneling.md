@@ -6,12 +6,15 @@ title: Tunneling to freedom
 ### With great power comes great ...
 * * * 
 
-Everyone knows the deal use what you know for good etc. Etc., with that in mind this is going to be a really quick intro on using ssh tunnels.
+Everyone knows the deal use what you know for good etc. etc.
+
+With that in mind this is going to be a really quick intro on using ssh tunnels.
 
 The reason for the header is this , if you want to do this at your 
-company with out permission don't , people really don't like it when
-you disobey the rules .Breaching a outgoing firewall can really
-make some people angry (including me)
+company with out permission don't do it .People really don't like it when
+you disobey the rules and breaching a outgoing firewall can really
+make some people angry (including me). If you want to do this at home to 
+learn stuff then please read on
 
 This has been talked about alot in the past but this is my post on it.
 
