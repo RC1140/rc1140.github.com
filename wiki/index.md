@@ -3,7 +3,19 @@ layout: default
 title: General Training 
 ---
 
+## About this wiki
+
+I needed a place to store various links and articles in a place that I could easily share
+and update. As such this is the end result , hopefully each link will at some point be
+accompanied by a blog post as well explaining in more detail what I thought or just
+to give a solution to a RE puzzle.
+
+## General
+* * * 
+
 [Unv Of Japan](http://i-web.i.u-tokyo.ac.jp/edu/training/ss/lecture/new-documents/Lectures/)
+
+[MIT Calculus Courseware](http://ocw.mit.edu/resources/res-18-006-calculus-revisited-fall-2010/index.htm)
 
 ## Reverse Engineering
 * * * 
