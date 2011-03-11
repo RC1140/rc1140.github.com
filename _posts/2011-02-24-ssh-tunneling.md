@@ -45,7 +45,9 @@ way.
 
 #### Punching through firewalls
 * * * 
+
 <img src="/images/straight.png"></img>
+
 This is probably the simplest , if all you want to do is simply browse with
 without being monitored etc.
 
@@ -60,6 +62,8 @@ the config for the relevant application (e.g. firefox).
 
 #### Making internal resources accessible to the outside
 * * * 
+
+<img src="/images/forward.png"></img>
 
 Again doing this with ssh is really very simple but requires a bit more
 explanation.
@@ -81,6 +85,8 @@ them to use.
 
 #### Making remote resources available locally
 * * * 
+
+<img src="/images/reverse.png"></img>
 
 This is the opposite of the example above.
 
