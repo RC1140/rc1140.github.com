@@ -45,7 +45,7 @@ way.
 
 #### Punching through firewalls
 * * * 
-
+<img src="/images/straight.png"></img>
 This is probably the simplest , if all you want to do is simply browse with
 without being monitored etc.
 
