@@ -21,4 +21,9 @@ to give a solution to a RE puzzle.
 * * * 
 
 [Mac OS X Reverse Engineering , Beginner Tutorial](http://reverse.put.as/wp-content/uploads/2011/02/beginners-tut-II.txt)
+[Hackfortress Reversing Challenges](https://github.com/peasleer/hackfortress)
 
+## Android Reversing / Disassembly 
+* * *
+
+[Dalvik Bytecode](http://www.netmite.com/android/mydroid/dalvik/docs/dalvik-bytecode.html)
