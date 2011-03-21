@@ -3,7 +3,6 @@ layout: post
 title: Breaking the Spies Key 
 ---
 
-
 ## Intro
 * * * 
 
@@ -32,14 +31,12 @@ at least once.
 
 After a quick read through of the code the following becomes clear.
 There are 3 function in the code.
+
 {% highlight cpp %}
 void getKey(int* key);
 void xor(char* buf, const char* text, const int* key, int keylen);
 int main(int argc,char** argv);
 {% endhighlight %}
-
-### Modifications 
-* * *
 
 Looking at the functions based on when they appeared in the file
 we first start looking for where each function is used. A quick
@@ -48,6 +45,11 @@ The xor function on the other hand is used in one place generate the
 plaintext from the given key. Since no key was given to us up until now
 we can assume that the getKey function was provided to us as a hint to
 solving the challenge.
+
+
+
+### Modifications 
+* * *
 
 At this point you have 2 options , either manually calculate the result of
 the function or let the app calculate it for you. I decided to go for the
