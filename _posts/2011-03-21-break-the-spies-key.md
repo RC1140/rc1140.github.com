@@ -31,8 +31,8 @@ at least once.
 
 After a quick read through of the code the following becomes clear.
 There are 3 function in the code 
-<syntaxhighlight lang="cpp">
+{% highlight cpp %}
 void getKey(int* key);
 void xor(char* buf, const char* text, const int* key, int keylen);
 int main(int argc,char** argv);
-</syntaxhighlight>
+{% endhighlight %}
