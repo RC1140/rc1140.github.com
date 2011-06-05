@@ -50,3 +50,6 @@ Thats it really there is nothing more that I think can be said.
 If you need specifics on something feel free to shout , I will 
 drop the code for the bot [online](https://github.com/RC1140/zaconURLWatcher) sometime soon if anyone cares 
 to check it out.
+
+Also if you feel so inclined check out the site and all data captured so 
+far at [urls.runawaycoder.co.za](http://urls.runawaycoder.co.za/)
