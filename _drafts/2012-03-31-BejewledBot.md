@@ -117,16 +117,16 @@ and right of the current block depending on what the rules dictate.
 For example to check the following rule :
 
     O
-    XOOO
+    XOO
 
-X is an invalid square and the current square         
+X is an invalid square (and, in this case, the one being checked)         
 O is a valid square.        
 
 To solve the check above we need to swap the invalid square with the square 
 above it. Before this rule can be run it needs to be run in a generic way.
 As such we need to ensure that there is a square above the current square 
-and 3 to the right of the current square. We perform this check by checking if
-X is less than 4. We also need to check that Y is greater than 0. If these checks
+and 2 to the right of the current square. We perform this check by checking if
+X is less than 3. We also need to check that Y is greater than 0. If these checks
 all execute correctly then we can perform a click on the respective squares.
 
 #### Rule Solutions
@@ -152,7 +152,7 @@ state that could annoy the user.
 
 Building the bot was quite fun and once I got past the initial learning
 curve it the development was pretty easy. Sadly though there are still
-some wholes in the bot which I dont feel like fixing atm. 
+some holes in the bot which I dont feel like fixing atm. 
 
 The first is that there is a rule or 2 that is missing and as such there
 are times when it will seem like the game does nothing. If this happens solve
