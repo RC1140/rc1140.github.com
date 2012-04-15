@@ -98,11 +98,11 @@ In the piece of code above we start of by  first creating
 a 8x8 2-dimensional array which represents rows and columns 
 on the board. 
 
-   For $y = 0 To 7 Step 1
+    For $y = 0 To 7 Step 1
       For $x = 0 To 7 Step 1
-       $ucm[$y][$x] = PixelGetColor ( $coord[0]  + 18 +( $x* 37), $coord[1] + ( ($y +1) * 37) - 11 )
+          $ucm[$y][$x] = PixelGetColor ( $coord[0]  + 18 +( $x* 37), $coord[1] + ( ($y +1) * 37) - 11 )
       Next
-   Next
+    Next
 
 We then run a 2 level loop which calculates the exact coord 
 of each pixel where we want to scrape the color from each block. 
