@@ -113,8 +113,8 @@ This is stored in the relevant position in the array for access later.
 
 #### Converting coords to words
 
- Local $coloredMap[8][8]
-   for $i = 0 To UBound($crd) - 1
+    Local $coloredMap[8][8]
+    for $i = 0 To UBound($crd) - 1
       For $x = 0 To 7 Step 1
          Switch $crd[$i][$x]
             Case 16775956,16776960
@@ -147,7 +147,7 @@ This is stored in the relevant position in the array for access later.
                EndSwitch
          EndSwitch
       Next
- Next
+    Next
 
 The conversion of a pixel to a word is done in the code above and sadly is quite messy.
 We start by kicking of a 2 level for loop to itterate through each of the blocks in the 
