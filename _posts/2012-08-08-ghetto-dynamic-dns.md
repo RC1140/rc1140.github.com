@@ -4,7 +4,7 @@ layout: default
 # Ghetto Dynamic DNS
 
 Story goes like so , I wanted Dynamic DNS with a custom domain but I didnt want to pay
-the costs the dyndns etc were asking so I rolled by own.
+the costs the dyndns etc were asking so I rolled by own with the help of Amazon Route53.
 
 ## How To
 
@@ -23,6 +23,6 @@ feel this way feel free to replace those 2 lines of code with
     access_id = os.environ['AWS_ACCESS_ID']
     secret_key = os.environ['AWS_SECRET_KEY']
 
-Which will get your keys from your current session.
+Which will get your keys from your current bash/shell session.
 
 Finally the code is fairly easy to read but ping me if you need help.
