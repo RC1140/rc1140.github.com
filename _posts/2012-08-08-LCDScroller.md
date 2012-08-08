@@ -21,7 +21,7 @@ dont want it to reverse direction the code is easy enough to
 change so that it starts display the start of the message 
 instead.
 
-You can find the code over @ https://gist.github.com/3299197
+You can find the code over @ [https://gist.github.com/3299197](https://gist.github.com/3299197)
 
 If you find any bug/issues ping me and I will fix it or submit
 a pull request.
