@@ -12,5 +12,5 @@ Information Security enthusiast who enjoys tinkering with
 everything that he can get his hands on.
 
 I blog [here](http://runawaycoder.co.za)    
-I work [here](http://thinkst.com)    
+I work [here](http://chasesoftware.co.za/)    
 My PGP key is [here](http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x259E93FFE81A0DEF)
