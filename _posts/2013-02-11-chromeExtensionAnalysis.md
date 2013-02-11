@@ -36,7 +36,7 @@ In order to successfully analyze an extension, you will need the following tools
 Chrome extensions are usually built either with HTML + JS (most common extension type) or native code. The native code can usually present
 A fairly hard analysis as it would require the reversing of a compiled dll. The HTML + JS route on the other hand is a bit easier and thankfully follows a fairly structured means of execution.
 
-### <a name="getextension"/>Getting the extension :
+### <a name="getextension"> Getting the extension </a>:
 
 So to get this started the first thing that is needed is to get hold 
 of the extension. This is not much of an issue when it is provided via direct link, but in the case
@@ -62,7 +62,7 @@ Result: `https://clients2.google.com/service/update2/crx?response=redirect&x=id%
 
 This will allow us to perform a direct download of the URL without the need to install the extension.
 
-### <a name="unpackextension"/>Unpacking the extension:
+### <a name="unpackextension">Unpacking the extension</a>:
 
 Once the extension has been downloaded rename the extension from .crx to .zip since the extension is
 simply a compressed zip file. Extract the file which we downloaded with your zip extraction tool of choice.
@@ -139,7 +139,7 @@ When loading the hola unblocker manifest.json we see the following data:
         "manifest_version" : 2
      }
 
-### <a name="manifestdetails"/>Manifest break down:
+### <a name="manifestdetails">Manifest break down</a>:
 #### Initial URLs
 
     "update_url":"http://clients2.google.com/service/update2/crx",
@@ -221,7 +221,7 @@ repositories. The [manifest version](http://developer.Chrome.com/extensions/mani
 by Chrome XSS protections. It is usually a good sign when the manifest version is set to two, it should be noted that
 manifest version one is being phased out slowly by Google so at some point all extensions will implement version two.
 
-#### <a name="jsdetails"/>Background.js 
+#### <a name="jsdetails">Background.js </a>
 
 The background.js file is usually where the meat of most of extensions will be. Keep in mind though, that the functions
 stored here are more akin to functions stored in a linked library. That is they are not executed unless called. This is 
@@ -325,7 +325,7 @@ The popup.html is fairly simple as there is no UI related content for this exten
 
 The popup.js file does not do too much either. It starts of by adding some dynamic html to the existing popup.html page so that a user can enable and disable the extension at will. It also adds some simple UI features such as making sure the dynamic links that are added actually open their respective web sites. Aside from these basic functions, there is not much more we can look at with these two files.
 
-### <a name="fin"/>Fin
+### <a name="fin">Fin</a>
 
 With those being the last pages to look at there is not more that we can analyze with this current extension. Yes they do some weird things in their code and there are some issues that might worry a more security conscious user, but on a whole the extension is simple yet effective. If a person was so inclined it would be fairly easy to generate a custom pac file and extension that would use your own personal proxy server that you have more control over. This could then be distributed to people that you wish to share access with, this is a fair amount simpler than asking a user to setup various bits of configuration.
 
@@ -333,7 +333,7 @@ In conclusion the analysis of an extension is fairly structured. First grab a co
 
 The next part of the analysis is a bit subject , depending on your style either analyze from the background up to the UI or analyze from the UI down to the background. The background first analysis usually tends to provide a more structured approach as the functions are usually stored in and easily parse-able state.
 
-### <a name="forward"/>Cleanups and Forward
+### <a name="forward">Cleanups and Forward</a>
 
 So the question now is what happens after your analysis has been completed (as in the case now). My first plan is to automate the entire process.
 While this means simply converting each of the steps into a script it takes a little time to test all this so I am putting it off for a bit. If on
