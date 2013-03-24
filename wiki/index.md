@@ -27,3 +27,5 @@ to give a solution to a RE puzzle.
 * * *
 
 [Dalvik Bytecode](http://www.netmite.com/android/mydroid/dalvik/docs/dalvik-bytecode.html)
+
+[Base 64 Encoder in C](http://base64.sourceforge.net/b64.c)
