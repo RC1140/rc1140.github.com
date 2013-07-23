@@ -173,7 +173,7 @@ is explained in the pages linked to each permission.
 
 The permissions I was most interested in was the proxy permission which is how the extension handles the traffic filtering. 
 While the `<all_urls>` permission is a little worrying there is no evidence yet to suggest that it is being abused. The storage
-and tabs permissions are usually linked to saving the user’s options and opening a new tab once the extension is installed
+and tabs permissions are usually linked to saving the users options and opening a new tab once the extension is installed
 to let the user visit the authors home page.
 
 At this stage there is no information explaining the inner workings of the extension and the analysis of the permissions
@@ -296,7 +296,7 @@ using the extension any URL that is loaded goes through their proxy. This in tur
 Now we can assume that they only handle a select set of URLS (yet to be verified) which will mean not much of an 
 inconvenience. But if they end up proxying all URLs by mistake, any url navigated to would be blocked until their listener finishes execution.
 
-Now taking a step back and looking at the original function that might be of some interest was pac_url. Looking at the function in detail it doesn’t really do anything particularly interesting, instead it generates the location where the pac file can be downloaded from. With some simple mental match we can work out what is that location that will be returned (which looks something like this)
+Now taking a step back and looking at the original function that might be of some interest was pac_url. Looking at the function in detail it doesnt really do anything particularly interesting, instead it generates the location where the pac file can be downloaded from. With some simple mental match we can work out what is that location that will be returned (which looks something like this)
 
       https://client.hola.org/proxy.pac_dev?browser=Chrome&ver=24
 
@@ -341,7 +341,7 @@ the other hand you wish to build the script yourself please go ahead and build i
 that may be better than mine.
 
 The other thing that I wanted to do now that I know what was wrong with the extension or rather what I didn't like I can patch the extension to work around
-these issues. The two issues that I wanted to patch were the fairly open permissions and the constant logs to the author’s remote servers. Patching the
+these issues. The two issues that I wanted to patch were the fairly open permissions and the constant logs to the authors remote servers. Patching the
 remote server calls are pretty easy, simply delete the clog function and then remove any calls to the clog function as well. While I was at it I 
 fixed a few tabbing issues to make things easier to read. 
 

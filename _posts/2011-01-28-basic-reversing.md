@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic application reversing and 0×41414141.com Challenge Two (Spoiler)
+title: Basic application reversing and 041414141.com Challenge Two (Spoiler)
 ---
 
 One of the many things that has interested me in the past
@@ -10,7 +10,7 @@ in the back ground.
 
 First of you will not be learning how to crack anything so
 if that is what you wanted you can leave now. Secondly if 
-you are doing the 0×41414141.com challenges on your own 
+you are doing the 0x41414141.com challenges on your own 
 then first give them a try yourself before getting the answer
 here.
 
