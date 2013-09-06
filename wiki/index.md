@@ -10,6 +10,10 @@ and update. As such this is the end result , hopefully each link will at some po
 accompanied by a blog post as well explaining in more detail what I thought or just
 to give a solution to a RE puzzle.
 
+## Running 
+
+[Medals I Have acquired from various races](http://www.flickr.com/photos/29154557@N02/sets/72157635410311460/)
+
 ## General
 * * * 
 
@@ -29,3 +33,4 @@ to give a solution to a RE puzzle.
 [Dalvik Bytecode](http://www.netmite.com/android/mydroid/dalvik/docs/dalvik-bytecode.html)
 
 [Base 64 Encoder in C](http://base64.sourceforge.net/b64.c)
+
