@@ -34,3 +34,8 @@ to give a solution to a RE puzzle.
 
 [Base 64 Encoder in C](http://base64.sourceforge.net/b64.c)
 
+## Badge Building
+* * *
+
+[How to build a badge](/wiki/TheBuild.html)
+
