@@ -4,6 +4,18 @@ title:  "Dotjs Extension Read through"
 date:   2014-04-24 
 ---
 
+Background
+--------------
+as a dev this is one of those things that i have been meaning to do for ages.
+While watching this talk given by Richard Hamming (link talk here) , I felt
+inspired to get this project going. While it was tempting to build a entire
+system to make this easy I figure I should get the process going and build
+a system once I have some data to work around. As a side note one of the 
+few devs whose work I enjoy following does regular series of code reviews
+where he does deep dives into various code bases (mostly game engines). If you dont already know who I am talking about
+then you should go have a look at fabien sanglard's blog http://fabiensanglard.net/
+, I hope that one day I can provide the same level of insight as he does.
+
 Why
 --------------
 
