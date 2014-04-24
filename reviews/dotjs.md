@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Dotjs Extension Read through"
+date:   2014-04-24 
+---
+
 Why
 --------------
 
