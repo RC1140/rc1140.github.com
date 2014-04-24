@@ -129,10 +129,48 @@ extension that should be installed.
 There are a bunch of tasks grouped under the :uninstall namespace. Wont be covering
 this since it just does the reverse of the tasks i just looked at.
 
+djsd
+-----------------
 
+This is the core service that is setup by the rakefile. running the command
 
+    file djsd
 
+Tells us that the file is not a binary but rather a ruby script which means
+I can now inspect this using a text editor.
 
+Opening the file and going from top to bottom tells us the following. The
+script does some basic argument checking. It checks for the help param 
+which prints the usage commands for the script. It also checks for the version
+flag whihc just prints the version and exits.
+
+Once the flag checking is complete a class called dotjs is created. The
+class is fairly basic and see to be more a interceptor/handler class.
+The class builds a body for a html request , as well as origin detection.
+
+Further details on how this class is used will be noted when it is encountered 
+in the code again (it should be encountered otherwise it can be removed)
+
+After the class is setup a ssl cert is created and a basic set of options
+are passed to the web brick http server. Whats interesting is that the cert
+exists after the last line of code , I am not sure what the __END__ does
+but I will provide details later.
+
+Finally when starting the server we now notice the dotjs class being
+passed as the handler for the index request.
+
+Reading back a little bit we notice that all that the class does is 
+serve a js file called default.js. The server also handles terminations
+cleanly.
+
+While the script is fairly clean and short i really think that it could 
+have been implemented a bit cleaner by loading the ssl cert from an external
+file instead of script the script. Although this self encasulation is reasonably
+usefull.
+
+I will also need to do more testing to determine why the author chose to use
+ssl when hosting the server since the cert is distributed with the extension
+changing the cert is easy enough.
 
 
 
