@@ -6,7 +6,7 @@ date:   2014-04-24
 
 Background
 --------------
-as a dev this is one of those things that i have been meaning to do for ages.
+As a dev this is one of those things that i have been meaning to do for ages.
 While watching this talk given by Richard Hamming (link talk here) , I felt
 inspired to get this project going. While it was tempting to build a entire
 system to make this easy I figure I should get the process going and build
@@ -129,7 +129,7 @@ extension that should be installed.
 There are a bunch of tasks grouped under the :uninstall namespace. Wont be covering
 this since it just does the reverse of the tasks i just looked at.
 
-djsd
+bin/djsd
 -----------------
 
 This is the core service that is setup by the rakefile. running the command
@@ -172,6 +172,35 @@ I will also need to do more testing to determine why the author chose to use
 ssl when hosting the server since the cert is distributed with the extension
 changing the cert is easy enough.
 
+This ends the files in the bi folder , as usual its pretty clean and effecient.
 
+Extension folder
+-------------------
 
+The ext folder contains the core files required  required to build a chrome extension.
+This folder as with the rest of the repo is clean and straight to the point as seen
+below.
 
+-rw-r--r-- 1 rc1140 users  380 Apr 24 20:20 manifest.json
+-rw-r--r-- 1 rc1140 users  91K Apr 24 20:20 jquery.js   
+-rw-r--r-- 1 rc1140 users 2.3K Apr 24 20:20 icon48.png  
+-rw-r--r-- 1 rc1140 users 6.6K Apr 24 20:20 icon128.png 
+-rw-r--r-- 1 rc1140 users  253 Apr 24 20:20 dotjs.js    
+
+The core of this folder is the manifest.json file which is used to tie a chrome
+extension together. Aside from that we have a couple of icon which chrome requires
+for an extension. The last file is the main js file that the extension injects
+into every page. Once this file is injected it then makes a ajax request to the
+local service for the js file associated with the current site. Once this file
+is loaded it is then eval'd so that it runs in the correct domain. 
+
+This is a pretty neat way to dynamically load the js files without needing to 
+setup any mappings between a js file and a website and get it executed on the
+correct page.
+
+Done 
+------------
+
+I have to say that after reading through the code and seeing how it pulls everything
+together in a simple package I think it would make a nice base for future projects
+where you need simple coms between a desktop and the browser.
