@@ -198,6 +198,29 @@ This is a pretty neat way to dynamically load the js files without needing to
 setup any mappings between a js file and a website and get it executed on the
 correct page.
 
+Random Notes
+--------------
+
+There are a few other things that I noticed about the project which were semi
+interesting to me. There were a number of outstanding pull requests which
+seem reasonably easy to merge,  I think it would be useful to either decline
+them or push them forward to clean up the outstanding list (some of the pull 
+requests are really old which really makes one wonder why they werent accepted).
+The has resulted in a huge number of forks (nothing wrong with that) but it would
+have been cool to have some of the feature in the core repo or least have the 
+pull requests purged. This same issue is visible in the issues section (too many 
+open issues), granted a bunch of them are related to the pull requests. I should
+mention that this is a fairly common issue with project on github (since they
+are the only people that make this data easily accessible) and I am just as
+guilty of having a bunch of hanging issues that i have never gotten to working on.
+
+TODO : As a side note it would be interesting to pull data from github showing the
+average number of issues/pull requests open for overall projects listed on github.
+
+Lastly it seems that the p3lim repo is the most updated version of all the forks
+but has changed the core to work a little differently where there is no local web
+server involved , instead the files are all hosted in the extension.
+
 Done 
 ------------
 
