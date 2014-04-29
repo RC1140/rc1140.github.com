@@ -6,22 +6,38 @@ date:   2014-04-24
 
 Background
 --------------
-As a dev this is one of those things that i have been meaning to do for ages.
-While watching this talk given by Richard Hamming (link talk here) , I felt
-inspired to get this project going. While it was tempting to build a entire
-system to make this easy I figure I should get the process going and build
+As a developer we are constantly told by our peers (at least I am) that opensource
+projects are made of unicorns. You get to see the code behind projects that you are 
+interested in and even make contributions when you find a problem. Sadly when asked
+how many projects they have contributed to many people default to 0 contributions.
+It may be argued that contributing to a new project is a leap that is not easy to 
+take, it should then be a given that people at least read and review their favorite
+open source projects. Again when asked about this many people are content to use
+a open source library or applicaiton assuming someone else has checked it out.
+
+In the same line of thought while watching this talk given by [Richard Hamming](https://www.youtube.com/watch?v=a1zDuOPkMSw), I felt
+inspired to get a long delayed project going. Calling it a project may be overkill
+but the idea is fairly simple. As Hamming suggests reading and reviewing papers weekly
+I have wanted to read and review opensource projects. On its own the idea is simple
+but has a number of benefits for me, I get to learn about a new cool project that
+I can always reffer back to for inspiration , I get to learn about how a language is
+used (depends on the language the project uses) and finally I get learn about new 
+ways to solve problems that other developers have fixed. 
+
+While it was tempting to build a entire
+system to make this process easy I figure I should get going and build
 a system once I have some data to work around. As a side note one of the 
-few devs whose work I enjoy following does regular series of code reviews
+few devs whose work I enjoy following, does regular series of code reviews
 where he does deep dives into various code bases (mostly game engines). If you dont already know who I am talking about
-then you should go have a look at fabien sanglard's blog http://fabiensanglard.net/
-, I hope that one day I can provide the same level of insight as he does.
+then you should go have a look at fabien sanglard's [blog](http://fabiensanglard.net/).
 
 Why
 --------------
 
-Selected as a projet from githubs trending projects for productivity
-as well as its a chrome extension. Further the plugin seems to tackle
-a problem that i tried to solve recently in a very clean manner.
+Selected a projet from githubs trending projects for productivity also
+since it was a chrome extension it would provide a good brush up on chrome
+dev techniques.Further the plugin seems to tackle a problem that i tried 
+to solve recently (loading custom code easily into a domain) in a very clean manner.
 
 Where
 --------------
@@ -32,8 +48,7 @@ Project is located on github @ https://github.com/defunkt/dotjs.git
 Down the rabbit hole
 --------------
 
-So cloning the project results in the following 
-file listing 
+So cloning the project results in the following file listing 
 
     -rw-r--r-- 1 rc1140 users 3.9K Apr 24 20:20 Rakefile                                            
     -rw-r--r-- 1 rc1140 users 2.8K Apr 24 20:20 README.markdown                                     
@@ -42,6 +57,7 @@ file listing
     drwxr-xr-x 2 rc1140 users 4.0K Apr 24 20:20 ext                                                 
     -rw-r--r-- 1 rc1140 users  498 Apr 24 20:20 com.github.dotjs.plist                              
     drwxr-xr-x 2 rc1140 users 4.0K Apr 24 20:20 bin                                                 
+
 A few things seem to stand out , there is a rake file which 
 probably means that ruby is involved. Author has also taken
 the time to include a hacking file so modifications are expected
@@ -49,7 +65,7 @@ to occur or have already happened in the past to warrant this.
 
 Next there is a plist file which is mac/ios file used in apps 
 for those operating systems , this either means this plugin is 
-    aimed @ mac/iOS users or the file got forgotten behind ?
+aimed @ mac/iOS users or the file got forgotten behind ?
 
 The rest of the project seems to be split into the extension and
 a binary folder. This should prove interesting as it may explain
@@ -181,11 +197,11 @@ The ext folder contains the core files required  required to build a chrome exte
 This folder as with the rest of the repo is clean and straight to the point as seen
 below.
 
--rw-r--r-- 1 rc1140 users  380 Apr 24 20:20 manifest.json
--rw-r--r-- 1 rc1140 users  91K Apr 24 20:20 jquery.js   
--rw-r--r-- 1 rc1140 users 2.3K Apr 24 20:20 icon48.png  
--rw-r--r-- 1 rc1140 users 6.6K Apr 24 20:20 icon128.png 
--rw-r--r-- 1 rc1140 users  253 Apr 24 20:20 dotjs.js    
+    -rw-r--r-- 1 rc1140 users  380 Apr 24 20:20 manifest.json
+    -rw-r--r-- 1 rc1140 users  91K Apr 24 20:20 jquery.js   
+    -rw-r--r-- 1 rc1140 users 2.3K Apr 24 20:20 icon48.png  
+    -rw-r--r-- 1 rc1140 users 6.6K Apr 24 20:20 icon128.png 
+    -rw-r--r-- 1 rc1140 users  253 Apr 24 20:20 dotjs.js    
 
 The core of this folder is the manifest.json file which is used to tie a chrome
 extension together. Aside from that we have a couple of icon which chrome requires
