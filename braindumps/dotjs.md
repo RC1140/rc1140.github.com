@@ -13,14 +13,14 @@ how many projects they have contributed to many people default to 0 contribution
 It may be argued that contributing to a new project is a leap that is not easy to 
 take, it should then be a given that people at least read and review their favorite
 open source projects. Again when asked about this many people are content to use
-a open source library or applicaiton assuming someone else has checked it out.
+a open source library or application assuming someone else has checked it out.
 
 In the same line of thought while watching this talk given by [Richard Hamming](https://www.youtube.com/watch?v=a1zDuOPkMSw), I felt
 inspired to get a long delayed project going. Calling it a project may be overkill
 but the idea is fairly simple. As Hamming suggests reading and reviewing papers weekly
 I have wanted to read and review opensource projects. On its own the idea is simple
 but has a number of benefits for me, I get to learn about a new cool project that
-I can always reffer back to for inspiration , I get to learn about how a language is
+I can always refer back to for inspiration , I get to learn about how a language is
 used (depends on the language the project uses) and finally I get learn about new 
 ways to solve problems that other developers have fixed. 
 
@@ -28,13 +28,13 @@ While it was tempting to build a entire
 system to make this process easy I figure I should get going and build
 a system once I have some data to work around. As a side note one of the 
 few devs whose work I enjoy following, does regular series of code reviews
-where he does deep dives into various code bases (mostly game engines). If you dont already know who I am talking about
+where he does deep dives into various code bases (mostly game engines). If you don't already know who I am talking about
 then you should go have a look at fabien sanglard's [blog](http://fabiensanglard.net/).
 
 Why
 --------------
 
-Selected a projet from githubs trending projects for productivity also
+Selected a project from githubs trending projects for productivity also
 since it was a chrome extension it would provide a good brush up on chrome
 dev techniques.Further the plugin seems to tackle a problem that i tried 
 to solve recently (loading custom code easily into a domain) in a very clean manner.
@@ -81,16 +81,16 @@ Readme gives a nice intro into how the extension works and why you would
 want to use it. It also gives a example script very early in the file 
 so that you can try stuff out.
 
-It seems the core repo i am looking at is only meant for OSX which would 
-explain the plist file i saw earlier. Will continue looking into this repo
-and switch to a windows repo when i need to actually test it.
+It seems the core repo I am looking at is only meant for OSX which would 
+explain the plist file I saw earlier. Will continue looking into this repo
+and switch to a windows repo when I need to actually test it.
 
 Its also nice that the readme includes direct links to the ports.
 
 Rakefile
 -----------------
 
-As expected the code in the rakefile is ruby and is supprisingly easy to read.
+As expected the code in the rakefile is ruby and is surprisingly easy to read.
 The file contains a number of tasks that are split up neatly as listed below
 
     task :all => [ :prompt, :daemon, :create_dir, :agent, :chrome, :done ]  
@@ -101,7 +101,7 @@ index to the list of tasks in the file.
 The author has split up the tasks quite neatly and each task encapsulates
 each bit of functionality very nicely.
 
-Not sure if i should should analyze every single task.
+Not sure if I should should analyze every single task.
 The following tasks a grouped under a namespace :install , this
 means that all the tasks  listed below will be executed when running
 the install task
@@ -114,7 +114,7 @@ Simply prompts the user to confirm what the rake file overall task will execute.
 
 This is a neat little task which checks if the entire process completed successfully 
 buy curling the local end point. I assume there is probably a http library that
-rake/ruby could use but by using curl it simplyfies things a fair amount since
+rake/ruby could use but by using curl it simplifies things a fair amount since
 the input string would never be changed. Potential errors could be that curl is
 not installed
 
@@ -139,16 +139,16 @@ Heh , as expected this creates the .js directory from which the extension takes 
 
 ### :chrome
 
-simply prints the message that the user should install the extension and link to the
+Simply prints the message that the user should install the extension and link to the
 extension that should be installed.
 
 There are a bunch of tasks grouped under the :uninstall namespace. Wont be covering
-this since it just does the reverse of the tasks i just looked at.
+this since it just does the reverse of the tasks I just looked at.
 
 bin/djsd
 -----------------
 
-This is the core service that is setup by the rakefile. running the command
+This is the core service that is setup by the rakefile. Running the command
 
     file djsd
 
@@ -158,7 +158,7 @@ I can now inspect this using a text editor.
 Opening the file and going from top to bottom tells us the following. The
 script does some basic argument checking. It checks for the help param 
 which prints the usage commands for the script. It also checks for the version
-flag whihc just prints the version and exits.
+flag which just prints the version and exits.
 
 Once the flag checking is complete a class called dotjs is created. The
 class is fairly basic and see to be more a interceptor/handler class.
@@ -181,14 +181,14 @@ cleanly.
 
 While the script is fairly clean and short i really think that it could 
 have been implemented a bit cleaner by loading the ssl cert from an external
-file instead of script the script. Although this self encasulation is reasonably
-usefull.
+file instead of script the script. Although this self encapsulation is reasonably
+useful.
 
 I will also need to do more testing to determine why the author chose to use
 ssl when hosting the server since the cert is distributed with the extension
 changing the cert is easy enough.
 
-This ends the files in the bi folder , as usual its pretty clean and effecient.
+This ends the files in the bi folder , as usual its pretty clean and efficient.
 
 Extension folder
 -------------------
@@ -221,7 +221,7 @@ There are a few other things that I noticed about the project which were semi
 interesting to me. There were a number of outstanding pull requests which
 seem reasonably easy to merge,  I think it would be useful to either decline
 them or push them forward to clean up the outstanding list (some of the pull 
-requests are really old which really makes one wonder why they werent accepted).
+requests are really old which really makes one wonder why they weren't accepted).
 The has resulted in a huge number of forks (nothing wrong with that) but it would
 have been cool to have some of the feature in the core repo or least have the 
 pull requests purged. This same issue is visible in the issues section (too many 
