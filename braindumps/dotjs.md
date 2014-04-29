@@ -188,7 +188,7 @@ I will also need to do more testing to determine why the author chose to use
 ssl when hosting the server since the cert is distributed with the extension
 changing the cert is easy enough.
 
-This ends the files in the bi folder , as usual its pretty clean and efficient.
+This ends the files in the bin folder , as usual its pretty clean and efficient.
 
 Extension folder
 -------------------
@@ -204,7 +204,7 @@ below.
     -rw-r--r-- 1 rc1140 users  253 Apr 24 20:20 dotjs.js    
 
 The core of this folder is the manifest.json file which is used to tie a chrome
-extension together. Aside from that we have a couple of icon which chrome requires
+extension together. Aside from that we have a couple of icons which chrome requires
 for an extension. The last file is the main js file that the extension injects
 into every page. Once this file is injected it then makes a ajax request to the
 local service for the js file associated with the current site. Once this file
@@ -222,7 +222,7 @@ interesting to me. There were a number of outstanding pull requests which
 seem reasonably easy to merge,  I think it would be useful to either decline
 them or push them forward to clean up the outstanding list (some of the pull 
 requests are really old which really makes one wonder why they weren't accepted).
-The has resulted in a huge number of forks (nothing wrong with that) but it would
+This has resulted in a huge number of forks (nothing wrong with that) but it would
 have been cool to have some of the feature in the core repo or least have the 
 pull requests purged. This same issue is visible in the issues section (too many 
 open issues), granted a bunch of them are related to the pull requests. I should
