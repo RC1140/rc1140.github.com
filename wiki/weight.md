@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Weight Stats
+title: Weight Over Time
 ---
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="/wiki/d3.min.js"></script>
-<script src="/wiki/weight.js"></script>
-<script src="/wiki/metricsgraphics.min.js"></script>
-<link rel="stylesheet" href="/wiki/metricsgraphics.css" type="text/css">
-<link rel="stylesheet" href="/wiki/metricsgraphics-demo.css" type="text/css">
+<link href='https://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css' rel='stylesheet' type='text/css'>
+<link href='dist/metricsgraphics.css' rel='stylesheet' type='text/css'>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.0/d3.min.js' charset='utf-8'></script>
 
-<div id="weightHolder"></div>
+<script src='dist/metricsgraphics.js'></script>
+<div style="position:relative;left:-200px;" id='fake_users1'></div> 
+<script src='weight.js'></script>
