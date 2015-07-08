@@ -13,10 +13,10 @@ $(document).ready(function() {
 			return mappedRow;
 		});
 		console.log(rowObjects);
-        //data = convert_dates(rows, 'year');
+        //data = convert_dates(rowObjects, 'year');
         data_graphic({
             title: "Weight over time",
-            data: data,
+            data: rowObjects,
             width: 900,
             chart_type: 'line',
             height: 200,
