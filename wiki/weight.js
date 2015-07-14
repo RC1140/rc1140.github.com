@@ -2,7 +2,7 @@
 $(document).ready(function() {
     
 MG._hooks = {};
-d3.json('https://spreadsheets.google.com/feeds/list/1ctzBIkxtY89RH45ArIFLVwxLv50kvAI6eRunhCXt7v4/2/public/basic?alt=json', function(data) {
+d3.json('https://spreadsheets.google.com/feeds/list/1ctzBIkxtY89RH45ArIFLVwxLv50kvAI6eRunhCXt7v4/3/public/basic?alt=json', function(data) {
     var rows = data.feed.entry;
 	var dataRows = [],weightRows = [],fatRows=[],muscleRows = [];
 	$.each(rows,function(index,row){
