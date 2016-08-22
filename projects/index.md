@@ -2,6 +2,10 @@
 layout: default
 title: Various Projects That I Work On 
 ---
+## Contributed Projects
+
+Netflix Jira Lib : https://github.com/Netflix-Skunkworks/go-jira/pull/49#issuecomment-237471232      
+Googles Github Go Lib : https://github.com/google/go-github/commit/5a00bb7b4d4ac9a533111665d02b64f535ba1367 (https://github.com/google/go-github/commit/b347348d7ac5d2141e718805982999f85c87d18e)
 
 ## Personal Projects 
 
