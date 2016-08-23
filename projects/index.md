@@ -11,6 +11,10 @@ Googles Github Go Lib : https://github.com/google/go-github/commit/5a00bb7b4d4ac
 
 This is just a place to keep a list of my various projects
 
+## Pypin
+
+Pypin : https://pypin.herokuapp.com/ , maintains a list of pinned job openings from a slack project.
+
 ## Github Starred Groups
 
 This project allows you to group repos with a tag so that you can easily find previously
